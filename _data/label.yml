@@ -7,13 +7,13 @@ panel:
 
 post:
   relate_posts: Further Reading
-  share: Share
+  share: اشتراک گذاری
   button:
-    next: Newer
-    previous: Older
+    next: بعدی
+    previous: قبلی
 
 search_hint: Search   # text show on search bar
 
-pin_prompt: Pinned    # pinned prompt
+pin_prompt: سنجاق شده    # pinned prompt
 
-read_time_unit: min   # see posts' time to read
+read_time_unit: دقیقه   # see posts' time to read
