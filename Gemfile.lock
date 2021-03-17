@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/SeedPuller/jekyll-theme-chirpy.git
-  revision: cc0df142baf52087e054bcc094739c75a1d7886d
-  branch: 3-2-stable
+  revision: 158915356b61ceac772260d9c9b21221b2d9ec31
+  branch: translation
   specs:
     jekyll-theme-chirpy (3.2.2)
       jekyll (~> 4.1)

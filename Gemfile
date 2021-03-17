@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # gem "jekyll-theme-chirpy", "~> 3.2"
 
-gem "jekyll-theme-chirpy", :git => 'https://github.com/SeedPuller/jekyll-theme-chirpy.git', :branch => "3-2-stable"
+gem "jekyll-theme-chirpy", :git => 'https://github.com/SeedPuller/jekyll-theme-chirpy.git', :branch => "translation"
 
 group :jekyll_plugins do
   # If you have any plugins, put them here!
