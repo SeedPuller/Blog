@@ -2,7 +2,19 @@
 title: About
 icon: fas fa-info
 order: 4
+rtl: true
 ---
 
+سلام. 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+توی این وبلاگ قراره درباره هرچیزی که می‌بینم و نمی‌بینم بنویسم. اینجا خلاصه مطالبی که خوندم رو می‌نویسم؛ چیز هایی که یاد میگیرم رو می‌نویسم؛ {بعضی}احساساتم رو می‌نویسم و حقیقتا نوشتن رو دوست دارم و ازش لذت می‌برم.
+
+راه های ارتباطی من داخل همین وبلاگ مشخصه اما بهرحال اینجا هم ذکر می‌کنم:
+
+* ایمیل من: SeedPuller [at] Gmail [dot] com
+* حساب تلگرامم: SeedPuller
+* حساب ماتریکس: SeedPuller::tchncs.de@
+
+و همچنین کلید عمومی من :
+* کلید عمومی من در [KeyBase](https://keybase.io/seedpuller/)
+
