@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/SeedPuller/jekyll-theme-chirpy.git
-  revision: 158915356b61ceac772260d9c9b21221b2d9ec31
+  revision: 387e59670bd8d162de5e5595e97bad0273983b67
   branch: translation
   specs:
     jekyll-theme-chirpy (3.2.2)
@@ -65,7 +65,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -76,7 +76,7 @@ GEM
     mercenary (0.4.0)
     nokogiri (1.11.2-x86_64-linux)
       racc (~> 1.4)
-    nokogumbo (2.0.4)
+    nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
     parallel (1.20.1)
     pathutil (0.16.2)
