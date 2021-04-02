@@ -1,5 +1,5 @@
 ---
-title: "یادداشت بداهه۲"
+title: "یادداشت بداهه۳"
 categories: [Inner Struggle]
 tags: [Inner Struggle]
 ---
