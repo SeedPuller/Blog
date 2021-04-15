@@ -1,7 +1,7 @@
 ---
 title: "همزمانی در سی++: مفاهیم اولیه"
 categories: [سی++]
-tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷]
+tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, چند نخی, برنامه نویسی چند نخی]
 ---
 
 

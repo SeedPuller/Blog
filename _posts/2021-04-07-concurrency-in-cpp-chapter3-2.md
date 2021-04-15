@@ -1,7 +1,7 @@
 ---
 title: "همزمانی در سی++: اشتراک گذاری داده ها(۲)"
 categories: [سی++]
-tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس]
+tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس, چند نخی, برنامه نویسی چند نخی]
 ---
 
 در [پست قبل](https://seedpuller.ir/posts/concurrency-in-cpp-chapter3-1/) درباره اینکه میوتکس(mutex) ها چی هستن و چطور می‌تونیم ازشون استفاده کنیم صحبت کردیم. رسیدیم به جایی که قرار بود Race Condition هایی که در ذات interface ما وجود داشتن رو پیدا و رفع کنیم :) بریم ببینیم چی میشه.

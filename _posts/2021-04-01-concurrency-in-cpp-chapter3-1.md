@@ -1,7 +1,7 @@
 ---
 title: "همزمانی در سی++: اشتراک گذاری داده ها(۱)"
 categories: [سی++]
-tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس]
+tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس, چند نخی, برنامه نویسی چند نخی]
 ---
 
 یکی از مزایای استفاده از تِرِد ها(threads) این هست که به ما اجازه این رو میده که یک داده واحد رو بین ترد های مختلف به اشتراک بگذاریم. در این فصل به مشکلات مربوط به اشتراک گذاری داده ها و راه‌حل های موجود  می‌پردازیم.

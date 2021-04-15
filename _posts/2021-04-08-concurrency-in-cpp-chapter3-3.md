@@ -1,7 +1,7 @@
 ---
 title: "همزمانی در سی++(۳): Dead Lock ها"
 categories: [سی++]
-tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس, "Dead Lock", ددلاک, "std::lock", "std::scoped_lock", "thread_local", "Storage class specifier", thread, multithread, multi thread, multi threading]
+tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس, "Dead Lock", ددلاک, "std::lock", "std::scoped_lock", "thread_local", "Storage class specifier", thread, multithread, multi thread, multi threading, چند نخی, برنامه نویسی چند نخی]
 ---
 
 خب در پست قبل این مسئله که ترد ها برای استفاده از داده باهم مسابقه می‌دن رو کمی بررسی کردیم و یک راه حل دم دست هم براش پیشنهاد دادیم. توی این پست میخوایم در مورد مشکلی بحث کنیم که یجورایی برعکس Race condition هست. توی این مشکل، ترد ها منتظر همدیگه میمونن که از یه داده ای استفاده کنن. انقدر منتظر میمونن که عملا هیچکدومشون کاری دیگه انجام نمیده. به این مشکل چی میگن؟ می‌گن *Dead Lock*.
