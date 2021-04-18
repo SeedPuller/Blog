@@ -1,5 +1,5 @@
 ---
-title: "همزمانی در سی++(۴): ژانگولر بازی با mutex و کارهای دیگر"
+title: "همزمانی در سی++(۵): جایگزین های mutex"
 categories: [سی++]
 tags: [C++, concurrency in action, concurrent processing, موازی کاری, همزمانی, سی++, سی++۱۷, shared data, mutex, "std::mutex", میوتکس, "Dead Lock", ددلاک, "std::lock", "std::scoped_lock", thread, multithread, multi thread, multi threading, "std::unique_lock", چند نخی, برنامه نویسی چند نخی]
 ---
