@@ -66,9 +66,8 @@ task که میتونستن چندکار رو با استفاده از task switc
 این مطلب رو روشن می‌کنه. دو task داریم که هرکدوم به ۱۰ قسمت تقسیم 
 شده‌ن(یک task با رنگ قرمز و دیگری سبز).
 
-![](https://seedpuller.space/wp-content/uploads/2020/09/image.png)
-
-![](https://seedpuller.space/wp-content/uploads/2020/09/image-1.png)
+![picture](https://mark.nl.tab.digital/s/JQTsQntcTBLrRig/preview){: .normal}
+_مقایسه اجرای دو کار روی یک پردازنده تک هسته ای و یک پردازنده دو هسته ای_
 
 ## رویکرد های همزمانی
 
