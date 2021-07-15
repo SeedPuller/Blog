@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/home/moorko/Blog/ssshojaei.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/moorko/Blog/jekyll/Blog/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/moorko/Blog/ssshojaei.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/home/moorko/Blog/jekyll/Blog/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/moorko/Blog/ssshojaei.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/moorko/Blog/jekyll/Blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"سیدپولر","short_name":"سیدپولر","start_url":"/","background_color":"#304CFD","theme_color":"#304CFD","display":"standalone","icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"6e818cc64559f7e2ef2f8c3989fe9151"},
     },{
-      plugin: require('/home/moorko/Blog/ssshojaei.github.io/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/home/moorko/Blog/jekyll/Blog/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
