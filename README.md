@@ -1,86 +1,96 @@
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-# Chirpy Starter
+<p align="center">
+  <a href="https://rolwinreevan.com">
+    <img alt="Gatsby" src="https://roxaleh.ir/icons/icon-512x512.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Portfolio template using <a href='https://ant.design/' target='_blank'>ant-design</a>
+</h1>
+<h3 align="center">gatsby starter template</h3>
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy)
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+The RTL version of https://github.com/rolwin100/rolwinreevan_gatsby_blog.git
 
-The startup template for [**Jekyll Theme Chirpy**][chirpy].
+This starter consists of ant design system you can use it for your personal blog. I have give a lot of time in developing this starter because I found that there were not much starters with a very good design. Please give a star to this project if you have like it to encourage me 😄. Thank you.
 
-When installing the Chirpy through [RubyGems][gem], Jekyll can only read files in the folders `_includes`, `_layout`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file from the theme's gem (use the command `bundle info --path jekyll-theme-chirpy` to locate). To fully use all the features of Chirpy, you also need to copy other critical files/directories from the theme's gem to your Jekyll site.
 
-```shell
-# The critical files/directories to run Chirpy theme
-├── _data
-├── _plugins
-├── _tabs
-├── _config.yml
-├── app.js
-├── feed.xml
-├── index.html
-├── robots.txt
-├── sw.js
-└── 404.html
-```
+## 🚀 Quick start
 
-We extracted all the necessary content of **Chirpy** theme's gem to help you quickly use the theme.
+1.  **Setup the project by.**
 
-## Installation
+    clone the project and install the dependencies
 
-[Use this template][usetemplate] to generate a new repository, and then execute:
+    ```shell
+    git clone https://github.com/ssshojaei/ssshojaei.github.io.git
+    cd ssshojaei.github.io
+    npm i
+    ```
+    
+1.  **Start developing.**
 
-[usetemplate]: https://github.com/cotes2020/chirpy-starter/generate
 
-```
-$ bundle
-```
+    ```shell
+    npm start
+    ```
 
-## Usage
+1.  **Open the source code and start editing!**
 
-### Customing Stylesheet
+    Your site is now running at `http://localhost:8000`!
 
-Creare a new file `/assets/css/style.scss` in your Jekyll site.
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-And then add the following content:
 
-```scss
----
----
+## 🧐 What's inside?
 
-@import {{ site.theme }}
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-// add your style below
-```
+    .
+    ├── content
+    ├── node_modules
+    ├── src
+    ├── static
+    ├── .eslintrc
+    ├── .example.env
+    ├── .gitignore
+    ├── .prettierrc
+    ├── config.js
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-config.plugins.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-### Changing the Number of Tabs
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-When adding or deleting files in the `_tabs` folder, you need to complete the section [Customing Stylesheet](#customing-stylesheet) first, and then add a new line before `@import`:
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-```scss
-$tab-count: {{ site.tabs | size | plus: 1 }};
-```
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-### Publishing to GitHub Pages
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-See the `jekyll-theme-chirpy`'s [deployment instructions](https://github.com/cotes2020/jekyll-theme-chirpy#deployment). Note that in order to use GitHub Actions caching to speed up the deployment, you should add the `Gemfile.lock` file to your repository.
+5.  **`config.js`**: all the configuration variables that are necessary for the site are added in this file.
 
-### Updating
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-Please note that files and directories in this project may change as the [`jekyll-theme-chirpy`][chirpy] is updated. When updating, please ensure that the file directory structure of your Jekyll site is the same as that of this project.
+7.  **`gatsby-config.plugins.js`**: This file contains the plugin configurations which is used in the gatsby-config.js. For modularity purpose we do this. 
 
-And then execute:
+8.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-```console
-$ bundle update jekyll-theme-chirpy
-```
+9.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-## Documentation
+10.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-See the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
+11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-## License
+12. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-This work is published under [MIT][mit] License.
+13. **`README.md`**: A text file containing useful reference information about your project.
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+14. **`content`**: This is the folder where we write our Markdowns for the blogs.
+
+<!-- AUTO-GENERATED-CONTENT:END -->
