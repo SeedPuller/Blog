@@ -1,5 +1,4 @@
 User-agent: *
-
-Disallow: /norobots/
-
-Sitemap: https://www.seedpuller.ir/sitemap.xml
+Allow: /
+Sitemap: https://seedpuller.ir/sitemap/sitemap-index.xml
+Host: https://seedpuller.ir
