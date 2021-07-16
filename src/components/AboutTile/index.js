@@ -16,7 +16,8 @@ const AboutTile = ({
     </div>
     <div className={`textCenter ${style.mrTp26PX}`}>
       <h3>{textH3}</h3>
-      <h4>{textH4}</h4>
+      {/* <h4>{textH4}</h4> */}
+      {textH4}
     </div>
   </div>
 )
