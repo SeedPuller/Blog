@@ -29,7 +29,10 @@ const Contact = () => (
             <ul>
               <li>رایانامهٔ من: SeedPuller [at] Gmail [dot] com</li>
               <li>حساب تلگرامم: SeedPuller</li>
-              <li>حساب ماتریکس: @seedpuller:tchncs.de</li>
+              <li>
+                حساب ماتریکس:
+              &lrm; @seedpuller:kde.org 
+              </li>
             </ul>
             <br></br>
             و همچنین کلید عمومی من:
