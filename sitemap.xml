@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://seedpuller.ir/blog/note-1400-05-28</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/idk-what-im-doing-with-my-life</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/suffers-of-extistence</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/try-to-free-mind</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/Inner-Struggle9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/Inner-Struggle8</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/Solution-for-crimes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/concurrency-in-cpp-chapter3-5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/concurrency-in-cpp-chapter3-4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/Inner-Struggle4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/concurrency-in-cpp-chapter3-3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/concurrency-in-cpp-chapter3-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/Inner-Struggle-3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/concurrency-in-cpp-chapter3-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/Inner-Struggle1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/starting-new-blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,7 +29,6 @@
 <url> <loc>https://seedpuller.ir/blog/daily-computer-architecture-learning3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/what-I-learned-from-deitel-chapter10</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/daily-computer-architecture-learning2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://seedpuller.ir/blog/why-im-wasting-my-time</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/daily-computer-architecture-learning1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/blog/what-I-learned-from-deitel-chapter9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://seedpuller.ir/tags/notes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
