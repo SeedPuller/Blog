@@ -49,27 +49,41 @@
 <p>حالا با همهٔ این چیزهایی که گفته شد می‌تونیم مفهوم Race Condition رو به همراه مفهوم Memory Location ها استفاده کنیم:</p>
 <p>اگر دوتا ترد به شکل همزمان به دوتا memory location مختلف دسترسی پیدا بکنن مشکلی نیست. اما اگر هر دو ترد قرار باشه که به یک مموری لوکیشن یکسان دسترسی پیدا کنن و یک یا هردوشون بخوان عملیات نوشتن رو انجام بدن،‌ اونوقت Race Condition داریم.</p>
 <p>راه جلوگیری از Race condition این هست که دسترسی‌ها دارای یک نوع ترتیب(حالا از هر نوعش) باشند. استفاده از Mutex ها یکی از این ترتیب‌های اجباری‌ای است که ما به برنامه اضافه می‌کنیم. یک راه دیگه هم استفاده کردن از عملیات‌های atomic برای sycnronization هست.</p>
-<p>Modification Orders</p>
+<h1>Modification Orders: ترتیب عملیات‌ها</h1>
 <p>هر شئ حافظه‌ای در سی++ یک «ترتیب تغییر» داره که  از تمام «عملیات‌های نوشتن‌» روی اون شئ تشکیل شده. تردها باید روی این ترتیب به توافق برسن. بخاطر همین تفاوت در Modification Orderها است که race condition به‌وجود میاد. وقتی از عملیات‌های اتمیک استفاده می‌کنیم، کامپایلر وظیفه داره که این syncronization و ترتیب تغییرات رو برای شئ مورد نظر به درستی مدیریت کنه.</p>
-<h1>Atomic operations and types in C++</h1>
+<h1>انواع اتمیک‌ها و عملیات روی آنها در سی++</h1>
 <p>یک عملیات اتمیک به عملیاتی می‌گن که قابل تقسیم شدن نباشه. یعنی این عملیات فقط یک شروع داره و یک انتها. یعنی اینکه تردها هیچوقت نمیتونن وضعیت این عملیات رو در حین اجرا ببینن. همیشه وضعیت رو یا قبل از شروع فرآیند میبینن یا بعد از اتمامش. بنابراین به‌عنوان مثال، اگر یک عملیات اتمیک load رو روی یک متغییر اتمیکی که مابقی عملیات‌ها(شامل نوشتن) هم روی این متغییر، اتمیک هستند انجام بدیم، مقداری که توسط load برگردونده میشه یا مقدار اولیهٔ اون متغییر هست یا مقداری که بعد از modification روی اون متغییر ایجاد شده.</p>
 <p>در سی++ برای انجام دادن عملیات‌های اتمیک، به متغییرهای اتمیک نیاز داریم.</p>
 <h2>اتمیک‌های استاندارد سی++</h2>
 <p>برای استفاده از Type اتمیک، باید به کتابخانه <code class="language-text">atomic</code> در سی++ رجوع کنیم و اشیاء رو از کلاس <code class="language-text">std::atomic</code> بسازیم. به شکل کلی، میشه گفت که تمام عملیات‌ها روی آبجکت‌های این کلاس از نوع اتمیک هستند. ولی یک‌سری جزئیات هم وجود داره:</p>
-<p>اینکه واقعا عملیات‌ها روی یک شئ از نوع اتمیک باشه یا نه، بستگی به پیاده‌سازی کلاس <code class="language-text">std::atomic</code> برای نوع مورد نظر ما داره. برای اینکه بفهمیم شئ مورد نظر ما اتمیک هست یا نه، باید از عضو تابعی (member function)ای به نام <code class="language-text">is_lock_free()</code> استفاده کنیم. این یعنی چی؟ یعنی اینکه ممکنه از یک نوع مثل <code class="language-text">std::atomic&lt;uintmax_t></code> بخوایم استفاده کنیم. با استفاده از تابع ذکر شده می‌تونیم بفهمیم که در پیاده‌سازیِ زیرین، آیا عملیات‌ها روی این نوع از داده‌ها با استفاده از دستورات atomic انجام می‌شن یا اینکه صرفا یک internal lock وجود داره و عملا اون زیر داره از mutex استفاده میشه؟ چیزی که ما در استفاده از متغییرهای اتمیک دنبالش هستیم اینه که از شرّ lock و mutex ها خلاص بشیم! پس استفاده از این نوع اتمیک‌ها یکجورایی نقض غرض هست.</p>
+<p>اینکه واقعا عملیات‌ها روی یک شئ از نوع اتمیک باشه یا نه، بستگی به پیاده‌سازی کلاس <code class="language-text">std::atomic</code> برای نوع مورد نظر ما داره. برای اینکه بفهمیم شئ مورد نظر ما اتمیک هست یا نه، باید از عضو تابعی (member function)ای به نام <code class="language-text">()is_lock_free</code> استفاده کنیم. این یعنی چی؟ یعنی اینکه ممکنه از یک نوع مثل <code class="language-text">std::atomic&lt;uintmax_t></code> بخوایم استفاده کنیم. با استفاده از تابع ذکر شده می‌تونیم بفهمیم که در پیاده‌سازیِ زیرین، آیا عملیات‌ها روی این نوع از داده‌ها با استفاده از دستورات atomic انجام می‌شن یا اینکه صرفا یک internal lock وجود داره و عملا اون زیر داره از mutex استفاده میشه؟ چیزی که ما در استفاده از متغییرهای اتمیک دنبالش هستیم اینه که از شرّ lock و mutex ها خلاص بشیم! پس استفاده از این نوع اتمیک‌ها یکجورایی نقض غرض هست.</p>
 <p>در نهایت انتظار میره که روی سکوها و پلتفرم‌های مرسوم، پیاده‌سازی اتمیک از همهٔ نوع داده‌های built-in از نوع lock-free باشن.</p>
 <p>متغییرهای اتمیک دارای Copy Constructor و Copy Assignment Operator نیستند. ولی از implicit conversion و assignment-from از طریق تابع‌های <code class="language-text">store()</code> ، <code class="language-text">exchange()</code> ، <code class="language-text">compare_exchange_weak()</code> و <code class="language-text">compare_exchange_strong()‍</code> پشتیبانی می‌کنن.</p>
 <p>میشه از <code class="language-text">std::atomic</code> برای داده‌های user-defined هم استفاده کرد و specialization رو انجام داد. منتها اونوقت دیگه صرفا محدود به عملیات‌هایی هستیم که چند خط قبل اسم تابعشون رو گفتم.</p>
 <p>توابعی که جهت عملیات روی متغییرهای اتمیک نام بردم، یک آرگومان اضافه هم برای مشخص کردن memory order دارند. این آرگومان، یک enumeration از <code class="language-text">std::memory_order</code> هست که ۶ نوع مختلف داره و بسته به نوع عملیات میشه اونها رو استفاده کرد:</p>
-<p>memory orderهای مورد نظر عبارت‌اند از: <code class="language-text">std::memory_order_relaxed</code>, <code class="language-text">std::
-memory_order_acquire,</code>std::memory<em>order</em>consume<code class="language-text">,</code>std::memory<em>order</em>acq<em>rel,
-`std::memory</em>order<em>release<code class="language-text">, و</code>std::memory</em>order<em>seq</em>cst`</p>
+<p>memory orderهای مورد نظر عبارت‌اند از:</p>
+<ul>
+<li><code class="language-text">std::memory_order_relaxed</code></li>
+<li>
+<p><code class="language-text">std::memory_order_acquire</code></p>
+<ul>
+<li><code class="language-text">std::memory_order_consume</code></li>
+<li>
+<p><code class="language-text">std::memory_order_acq_rel</code></p>
+<ul>
+<li><code class="language-text">std::memory_order_release</code></li>
+<li><code class="language-text">std::memory_order_seq_cst</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>مقدار انتخابی پیشفرض برای عملیات‌ها، <code class="language-text">std::memory_order_seq_cst</code> هست که قوی‌ترین memory orderها محسوب میشه. در ادامه همین فصل راجع به جزئیات این memory orderها بیشتر بحث میشه ولی فعلا به همین مورد که کجاها میشه ازشون استفاده کرد اکتفا می‌کنیم:</p>
 <ul>
-<li>برای عملیات‌های <strong>Store</strong>، میشه از <em>memory<em>order</em>relaxed</em>، <em>memory<em>order</em>relaxed</em> و <em>memory<em>order</em>seq_cst</em> استفاده کرد.</li>
+<li>برای عملیات‌های <strong>Store</strong>، میشه از memory<em>order</em>relaxed، memory<em>order</em>relaxed و memory<em>order</em>seq_cst استفاده کرد.</li>
 <li>برای عملیات‌های <strong>Load</strong>، میشه از memory<em>order</em>relaxed, memory<em>order</em>consume,
 memory<em>order</em>acquire یا memory<em>order</em>seq_cst استفاده کرد.</li>
-<li>برای عملیات‌های <strong>Read-Modify-Write</strong> میشه از همهٔ ۶ memory order موجود استفاده کرد.</li>
+<li>برای عملیات‌های <strong>Read-Modify-Write</strong> میشه از همهٔ شش memory order موجود استفاده کرد.</li>
 </ul>
 <h2>عملیات روی <code class="language-text">std::atomic_flag</code></h2>
 <p>ساده‌ترین نوع متغییرهای اتمیک، <code class="language-text">std::atomic_flag</code> است. تعداد توابع خیلی خیلی محدودی داره(فقط یک نابودگر، یک تابع clear و یک تابع پرسش و تخصیص داره). میشه به عنوان یک Boolean نمایشش داد. اساساً از این نوع متغییر بیشتر به عنوان یک building block استفاده میشه و احتمال خیلی کمی وجود داره که به شکل مستقیم اون رو ببینیم. اما چیز جالبیه(کلا از نظر من این atomicها چیز جالبی هستند). یک نکته در استفاده از این type هست و اونم در زمان initialize کردنشه. حتما و حتما باید در زمان initialize، مقدار اولیه رو برابر با <code class="language-text">ATOMIC_FLAG_INIT</code> قرار بدیم! یعنی اینجوری:</p>
